@@ -1,0 +1,5 @@
+service usbstart /system/bin/usbstart
+    disabled
+    oneshot
+    keycodes ${ro.usb.connect.keycodes:-none}
+    writepid /dev/cpuset/foreground/tasks

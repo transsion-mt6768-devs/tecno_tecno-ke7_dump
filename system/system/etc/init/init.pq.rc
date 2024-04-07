@@ -1,0 +1,3 @@
+#SPD: add for PQE CEQCEB-28 by zihan.guo 20200515 start
+on post-fs-data
+    mkdir /data/pq 0775 system system
